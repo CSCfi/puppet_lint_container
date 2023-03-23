@@ -1,0 +1,6 @@
+[puppetlabs-deps]
+name=Puppet Labs Dependencies El 7 - $basearch
+baseurl=http://yum.puppetlabs.com/el/7/dependencies/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=http://yum.puppetlabs.com/RPM-GPG-KEY-puppetlabs

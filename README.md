@@ -1,2 +1,3 @@
-# puppet_lint_container
-Container to run puppet-lint with CentOS7
+# Usage
+./build_container.sh
+./run_puppet-lint_container.sh ~/src/puppet-module/
