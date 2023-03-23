@@ -10,8 +10,8 @@ ENV env_userid $userid
 ARG pwd
 ENV env_pwd $pwd
 
-# Add our same user and id to the container
-#RUN useradd $env_username -u $env_userid
+Add our same user and id to the container
+RUN useradd $env_username -u $env_userid
 
 COPY *.repo /etc/yum.repos.d/
 COPY RPM-GPG* /etc/pki/rpm-gpg/
