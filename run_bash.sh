@@ -11,7 +11,7 @@ if "${CONTAINER_CMD}" container ls -a | grep -q puppet_lint; then
 else
     # shellcheck disable=SC2048,SC2086
     "${CONTAINER_CMD}" run -it \
-        -v "${HOME}:/home/${USER}:U" \
+        -v "${HOME}:/home/${USER}" \
         --user "$(id -u)" \
         --rm \
         --network=host \
