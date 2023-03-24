@@ -12,7 +12,6 @@ else
     # shellcheck disable=SC2048,SC2086
     "${CONTAINER_CMD}" run -it \
         -v "${HOME}:/home/${USER}" \
-        --user "$(id -u)" \
         --rm \
         --network=host \
         --name puppet_lint puppet_lint \

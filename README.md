@@ -4,10 +4,17 @@
 
 This is a working proof of concept to run puppet-lint in a CentOS 7 container.
 
+## Installation
+
+1 Install podman/docker
+2 Run:
+```bash
+./build_container.sh
+```
+
 ## Usage
 
 ```bash
-./build_container.sh
 ./run_puppet-lint_container.sh ~/src/puppet-module/
 ```
 ### Git pre-commit hook
